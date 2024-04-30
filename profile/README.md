@@ -1,16 +1,16 @@
 # Computer Architecture Research Project (CARP)
-Welcome to the home of Cal Poly's CARP, an ongoing group/club dedicated to open source chip design.
+Welcome to the home of Cal Poly's CARP, an ongoing group/club dedicated to open source chip design. 
 
-## Getting Started
+# Getting Started
 
 
 
-### Tools
+## Tools
 All of these tools work best on Linux. 
 - If you are on Windows, install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install). Complete the following installations from within WSL. Also see using [WSL with VSCode](https://code.visualstudio.com/docs/remote/wsl).
 - If you are on Mac, you can install tools natively, with varying support.
 
-#### OSS Cad Suite
+### OSS Cad Suite
 OSS Cad Suite bundles all of the necessary open source tools for digital design, inclduing:
 - __Verilator__ for Linting & Simulation
 - __CocoTB__ for Testing
@@ -27,7 +27,7 @@ https://github.com/YosysHQ/oss-cad-suite-build/releases/latest
 3. Run the following command in EVERY terminal that needs OSS Cad Suite Tools:
 `source <extracted_location>/oss-cad-suite/environment`
 
-#### RISC-V Toolchain
+### RISC-V Toolchain
 The RISC-V toolchain lets us compile C and Assembly files to get RISC-V machine code, as well as debug that code. 
 
 To install on Linux or WSL, follow the instructions here:
