@@ -39,7 +39,7 @@ Example Installation on Linux:
 wget https://github.com/stnolting/riscv-gcc-prebuilt/releases/download/rv32i-131023/riscv32-unknown-elf.gcc-13.2.0.tar.gz
 sudo mkdir /opt/riscv
 sudo tar -xzf riscv32-unknown-elf.gcc-13.2.0.tar.gz -C /opt/riscv/
-echo "export PATH=$PATH:/opt/riscv/bin" >> ~/.bashrc
+echo "PATH=\$PATH:/opt/riscv/bin" >> ~/.bashrc
 ```
 
 To install on Mac, follow these instructions:
