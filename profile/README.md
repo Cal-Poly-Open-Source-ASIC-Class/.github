@@ -3,7 +3,13 @@ Welcome to the home of Cal Poly's CARP, an ongoing group/club dedicated to open 
 
 # Getting Started
 
-
+## Note on Submodules
+Many repositories in this organization rely on eachother, and use submodules to handle this.
+After cloning a repo, be sure to immediately initiate and update submodules:
+```
+git submodule init
+git submodule update --recursive
+```
 
 ## Tools
 All of these tools work best on Linux. 
