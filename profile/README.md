@@ -1,52 +1,29 @@
-# Computer Architecture Research Project (CARP)
-Welcome to the home of Cal Poly's CARP, an ongoing group/club dedicated to open source chip design. 
+# Open Source ASIC Class
 
-# Getting Started
-
-## Note on Submodules
-Many repositories in this organization rely on eachother, and use submodules to handle this.
-After cloning a repo, be sure to immediately initiate and update submodules:
-```
-git submodule init
-git submodule update --recursive
-```
-
-## Tools
-All of these tools work best on Linux. 
-- If you are on Windows, install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install). Complete the following installations from within WSL. Also see using [WSL with VSCode](https://code.visualstudio.com/docs/remote/wsl).
-- If you are on Mac, you can install tools natively, with varying support.
-
-### OSS Cad Suite
-OSS Cad Suite bundles all of the necessary open source tools for digital design, inclduing:
-- __Verilator__ for Linting & Simulation
-- __CocoTB__ for Testing
-- __Yosys__ for Synthesis
-- __GTKWave__ for viewing waveforms
-
-To install, follow the instructions here: 
-https://github.com/YosysHQ/oss-cad-suite-build
-
-In summary,
-1. Download the archive depending on your system here: 
-https://github.com/YosysHQ/oss-cad-suite-build/releases/latest
-2. Extract it to somewhere accessible, such as your home directory `~`
-3. Run the following command in EVERY terminal that needs OSS Cad Suite Tools:
-`source <extracted_location>/oss-cad-suite/environment`
-
-### RISC-V Toolchain
-The RISC-V toolchain lets us compile C and Assembly files to get RISC-V machine code, as well as debug that code. 
-
-To install on Linux or WSL, follow the instructions here:
-https://github.com/stnolting/riscv-gcc-prebuilt
+# Docker Installation
+## Windows
+Everything we do in this class on Windows will be done in [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). Install it from PowerShell using `wsl --install` and set up a username/password.
 
 
-Example Installation on Linux:
-```
-wget https://github.com/stnolting/riscv-gcc-prebuilt/releases/download/rv32i-131023/riscv32-unknown-elf.gcc-13.2.0.tar.gz
-sudo mkdir /opt/riscv
-sudo tar -xzf riscv32-unknown-elf.gcc-13.2.0.tar.gz -C /opt/riscv/
-echo "PATH=\$PATH:/opt/riscv/bin" >> ~/.bashrc
-```
+Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). Once set up, enable WSL integration so that your WSL instances can access docker.
 
-To install on Mac, follow these instructions:
-https://github.com/riscv-software-src/homebrew-riscv
+![alt text](docker.png)
+
+## Mac
+
+### Step 1: Install Docker
+Install [Docker](https://www.docker.com/products/docker-desktop/). 
+
+After installation open Docker from your mac, make an account and ensure the software is running.
+
+### Step 2: Install and Setup XQuartz
+Ensure XQuartz is Installed and Running:
+
+1. Install XQuartz from https://www.xquartz.org/. Launch XQuartz after installation. Configure XQuartz to Allow Network Connections:
+2. Go to XQuartz > Preferences > Security. Uncheck the option Authenticate connections. Check the option Allow connections from network clients.
+3. Restart XQuartz for the changes to take effect.
+
+## Linux
+
+Install [Docker](https://www.docker.com/products/docker-desktop/) with your preferred package manager. For example:
+`sudo apt install docker` 
