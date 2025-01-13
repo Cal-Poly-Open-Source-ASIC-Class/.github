@@ -31,3 +31,19 @@ Ensure XQuartz is Installed and Running:
 
 Install [Docker](https://www.docker.com/products/docker-desktop/) with your preferred package manager. For example:
 `sudo apt install docker` 
+
+# VS Code Configuration
+It is recommended to use VS Code as an editor due to its support for some useful extensions and interoperation with WSL.
+
+## WSL Setup (Windows Only)
+- Install the [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), which allows VS Code to connect to WSL
+- Connect to WSL by navigating to the remote explorer and pressing the arrow on your WSL image ![image](https://github.com/user-attachments/assets/fd546ea7-f7e9-4737-b453-3f9d788df506)
+- The bottom left corner of the window should show that WSL is connected ![image](https://github.com/user-attachments/assets/461ade17-89e0-4ad6-9e69-c26b0fed3fed)
+- Continue with the following setup
+
+## All Platforms
+
+- Install [Surfer](https://marketplace.visualstudio.com/items?itemName=surfer-project.surfer), a useful waveform viewer.
+- Install [verilog-hdl](https://marketplace.visualstudio.com/items?itemName=mshr-h.veriloghdl), which provides syntax highlighting for System Verilog.
+
+
