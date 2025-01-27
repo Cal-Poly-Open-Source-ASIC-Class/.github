@@ -1,9 +1,11 @@
 # Open Source ASIC Class
-
+- [Docker Installation](#docker-installation)
+  - [Windows](#windows-install)
+  - [Mac](#mac-install)
+  - [Linux](#linux-install)
+- [VS Code Configuration](#vs-code-configuration)
+  
 # Docker Installation
-- [Windows](#windows-install)
-- [Mac](#mac-install)
-- [Linux](#linux-install)
 
 ## Windows Install
 Everything we do in this class on Windows will be done in [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). Install it from PowerShell using `wsl --install` and set up a username/password.
